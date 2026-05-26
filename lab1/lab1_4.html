@@ -37,16 +37,11 @@
             padding-bottom: 5px;
         }
 
-        p {
-            color: #555;
-        }
-
         img {
             display: block;
             max-width: 100%;
             height: auto;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin: 15px 0;
             border-radius: 10px;
         }
 
@@ -83,7 +78,7 @@
         Элемент <code>img</code> внедряет изображение в текущий документ.
     </p>
 
-    <p><b>Задание 1.</b> Вставьте изображение <code>aquaria.jpg</code></p>
+    <p><b>Задание 1.</b></p>
 
     <img
         src="images/aquaria.jpg"
@@ -99,7 +94,7 @@
         если изображение не найдено.
     </p>
 
-    <p><b>Задание 2.</b> Изображение с ошибочной ссылкой</p>
+    <p><b>Задание 2.</b></p>
 
     <img
         src="images/slonn.png"
@@ -110,7 +105,7 @@
 
     <h2>Размеры изображения</h2>
 
-    <p><b>Задание 3.</b> Изображение с width и height</p>
+    <p><b>Задание 3.</b></p>
 
     <img
         src="images/redcat.jpg"
@@ -127,20 +122,17 @@
 
     <img
         src="images/mushroom.jpg"
-
         srcset="
             images/mushroom_portrait.jpg 575w,
             images/mushroom_landscape.jpg 768w,
             images/mushroom_retina.jpg 992w
         "
-
         sizes="
             (max-width: 575px) 100vw,
             (max-width: 768px) 80vw,
             (max-width: 992px) 60vw,
             50vw
         "
-
         alt="Гриб">
 
     <p>Адаптивное изображение</p>
