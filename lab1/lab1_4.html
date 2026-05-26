@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Изображения</title>
+</head>
+<body>
+<main>
+<h1>Изображения</h1>
+
+<h2>Элемент img</h2>
+<p><b>Задание 1.</b></p>
+<img src="images/aquaria.jpg" alt="Aquaria">
+<p>Изображение aquaria.jpg</p>
+
+<h2>Альтернативный текст</h2>
+<p><b>Задание 2.</b></p>
+<img src="images/slonn.png" alt="Изображение не найдено">
+<p>Ошибка загрузки изображения</p>
+
+<h2>Размеры изображения</h2>
+<p><b>Задание 3.</b></p>
+<img src="images/redcat.jpg" alt="Рыжий кот" width="400" height="300">
+<p>Изображение с указанными размерами</p>
+
+<p><b>Задание 4.</b></p>
+<img
+src="images/mushroom.jpg"
+srcset="images/mushroom_portrait.jpg 575w,
+images/mushroom_landscape.jpg 768w,
+images/mushroom_retina.jpg 992w"
+sizes="(max-width: 575px) 100vw,
+(max-width: 768px) 80vw,
+(max-width: 992px) 60vw,
+100vw"
+alt="Гриб">
+<p>Адаптивное изображение</p>
+
+<h2>Подпись к изображению</h2>
+<figure>
+<img src="images/globus.gif" alt="Глобус">
+<figcaption>Анимированное изображение глобуса</figcaption>
+</figure>
+
+<h2>Элемент picture</h2>
+<picture>
+<source srcset="images/html5-logo.svg" type="image/svg+xml">
+<img src="images/html5-logo.png" alt="Логотип HTML5">
+</picture>
+<p>Логотип HTML5</p>
+
+<h2>Оптимизация изображений</h2>
+<p><b>WebP:</b></p>
+<img src="images/muscle.webp" alt="Muscle WebP">
+<p>Изображение в формате WebP</p>
+
+<p><b>AVIF:</b></p>
+<img src="images/light.avif" alt="Light AVIF">
+<p>Изображение в формате AVIF</p>
+
+</main>
+</body>
+</html>
+
+
+
+</html>
