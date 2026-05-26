@@ -4,35 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Карта изображений</title>
+    <title>Навигация по лабораторным</title>
 
     <style>
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            color: white;
         }
 
         main {
-            background: white;
-            max-width: 1000px;
-            margin: auto;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 1100px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
 
         h1 {
             text-align: center;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .image-container:hover {
+            transform: scale(1.01);
         }
 
         img {
-            max-width: 100%;
-            border-radius: 10px;
+            width: 100%;
             display: block;
-            margin: auto;
+            border-radius: 20px;
+        }
+
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 14px;
         }
 
     </style>
@@ -46,14 +83,17 @@
     <h1>Навигация по лабораторным работам</h1>
 
     <p>
-        Нажмите на область изображения
+        Нажмите на нужный раздел изображения
     </p>
 
-    <img
-        src="images/images/navigation.jpg"
-        alt="Навигация"
-        usemap="#labsmap"
-        width="1000">
+    <div class="image-container">
+
+        <img
+            src="images/images/navigation.jpg"
+            alt="Навигация"
+            usemap="#labsmap">
+
+    </div>
 
     <map name="labsmap">
 
@@ -82,6 +122,10 @@
             alt="GitHub">
 
     </map>
+
+    <div class="footer">
+        HTML Image Map • GitHub Pages
+    </div>
 
 </main>
 
