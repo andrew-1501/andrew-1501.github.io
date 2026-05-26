@@ -1,20 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <title>Моя первая страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторные работы</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            color: white;
+        }
+
+        main {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 42px;
+        }
+
+        .links {
+            display: grid;
+            gap: 20px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: rgba(255,255,255,0.08);
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+            font-size: 20px;
+        }
+
+        a:hover {
+            background: rgba(255,255,255,0.18);
+            transform: translateX(10px);
+        }
+
+    </style>
+
 </head>
+
 <body>
 
-    <h1>Привет!</h1>
+<main>
 
-    <p>
-        Это моя первая HTML-страница.
-    </p>
+    <h1>Лабораторные работы</h1>
 
-    <p>
-        Я изучаю создание сайтов.
-    </p>
+    <div class="links">
+
+        <a href="lab1_1.html">
+            Лабораторная работа 1
+        </a>
+
+        <a href="lab1_2.html">
+            Лабораторная работа 2
+        </a>
+
+        <a href="lab1_3.html">
+            Лабораторная работа 3
+        </a>
+
+        <a href="lab1_4.html">
+            Лабораторная работа 4
+        </a>
+
+        <a href="lab1_5.html">
+            Лабораторная работа 5
+        </a>
+
+        <a href="lab1_6.html">
+            Лабораторная работа 6
+        </a>
+
+        <a href="lab1_7.html">
+            Лабораторная работа 7
+        </a>
+
+        <a href="png.html">
+            PNG Галерея
+        </a>
+
+    </div>
+
+</main>
 
 </body>
+
 </html>
