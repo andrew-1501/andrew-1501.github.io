@@ -37,16 +37,11 @@
             padding-bottom: 5px;
         }
 
-        p {
-            color: #555;
-        }
-
         img {
             display: block;
             max-width: 100%;
             height: auto;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin: 15px 0;
             border-radius: 10px;
         }
 
@@ -83,10 +78,10 @@
         Элемент <code>img</code> внедряет изображение в текущий документ.
     </p>
 
-    <p><b>Задание 1.</b> Вставьте изображение <code>aquaria.jpg</code></p>
+    <p><b>Задание 1.</b></p>
 
     <img
-        src="images/aquaria.jpg"
+        src="images/images/aquaria.jpg"
         alt="Aquaria">
 
     <p>Изображение aquaria.jpg</p>
@@ -99,10 +94,10 @@
         если изображение не найдено.
     </p>
 
-    <p><b>Задание 2.</b> Изображение с ошибочной ссылкой</p>
+    <p><b>Задание 2.</b></p>
 
     <img
-        src="images/slonn.png"
+        src="images/images/slonn.png"
         alt="Изображение не найдено">
 
     <p>Ошибка загрузки изображения</p>
@@ -110,10 +105,10 @@
 
     <h2>Размеры изображения</h2>
 
-    <p><b>Задание 3.</b> Изображение с width и height</p>
+    <p><b>Задание 3.</b></p>
 
     <img
-        src="images/redcat.jpg"
+        src="images/images/redcat.jpg"
         alt="Красный кот"
         width="500"
         height="350">
@@ -126,12 +121,12 @@
     <p><b>Задание 4.</b></p>
 
     <img
-        src="images/mushroom.jpg"
+        src="images/images/mushroom.jpg"
 
         srcset="
-            images/mushroom_portrait.jpg 575w,
-            images/mushroom_landscape.jpg 768w,
-            images/mushroom_retina.jpg 992w
+            images/images/mushroom_portrait.jpg 575w,
+            images/images/mushroom_landscape.jpg 768w,
+            images/images/mushroom_retina.jpg 992w
         "
 
         sizes="
@@ -153,7 +148,7 @@
     <figure>
 
         <img
-            src="images/globus.gif"
+            src="images/images/globus.gif"
             alt="Глобус">
 
         <figcaption>
@@ -170,11 +165,11 @@
     <picture>
 
         <source
-            srcset="images/html5-logo.svg"
+            srcset="images/images/html5-logo.svg"
             type="image/svg+xml">
 
         <img
-            src="images/html5-logo.png"
+            src="images/images/html5-logo.png"
             alt="Логотип HTML5">
 
     </picture>
@@ -189,7 +184,7 @@
     <h3>WebP</h3>
 
     <img
-        src="images/muscle.webp"
+        src="images/images/muscle.webp"
         alt="Muscle WebP">
 
     <p>Изображение в формате WebP</p>
@@ -198,7 +193,7 @@
     <h3>AVIF</h3>
 
     <img
-        src="images/light.avif"
+        src="images/images/light.avif"
         alt="Light AVIF">
 
     <p>Изображение в формате AVIF</p>
@@ -206,4 +201,5 @@
 </main>
 
 </body>
-</html> проверь этот код чтобы не было ничего лишнего 
+
+</html>
